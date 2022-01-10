@@ -71,10 +71,15 @@ public class CoinPrefManager : MonoBehaviour{
 
                 //move coin to collected coin position
                 coinl.transform.position = collectedCoinPosition;
-
+               
+                Vector3 pos = Vector3.zero;
+                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 1)
+                {
+                    pos = collectedCoinPosition;
+                }
                 //animate coin to target position
                 float duration = Random.Range (minAnimDuration, maxAnimDuration);
-                coinl.transform.DOMove(targetPosition,duration)
+                coinl.transform.DOMove(targetPosition + pos,duration)
                     .SetEase(easeType)
                     .OnComplete(() =>
                     {
