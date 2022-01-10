@@ -1,0 +1,50 @@
+[
+    {
+        "appName": "Dainik Rashifal",
+        "appImage": "dainikrashifal",
+        "appDescription": "Free Daily Horoscope. Your future is now in your hands. The horoscope of which the whole world is reaping the benefits today, you can also get it free of cost through this app. Download now",
+        "appLink": "com.bhaktapps.dainik.rashifal"
+    },
+    {
+        "appName": "Shiv Tandav",
+        "appImage": "shivtandav",
+        "appDescription": "Shiv Bahajan and Shiv Tandav Stotram in different languages including Sanskrit, Hindi, English etc Daily darshan of Shri Mahakaleshwar Temple Ujjain, Bhajan Collection of Shiv Ji with Stotram.",
+        "appLink": "com.bhaktapps.shiv.strotam"
+    },
+    {
+        "appName": "Sundarkaand Anuvaad",
+        "appImage": "sundarkaand",
+        "appDescription": "Sundarkaand with Hindi and Sanskrit translation. Includes daily darshan of Sarangpur Hanumanj ji, Bhajan Collection of Hanuman Ji with Sundarkaand.",
+        "appLink": "com.bhaktapps.sundarkaand"
+    },
+    {
+        "appName": "Hanuman Chalisa & Darshan",
+        "appImage": "hanumanchalisa",
+        "appDescription": "Millions of poeple chant Hanuman chalisa every day. Some chant for 7 times each day. Also many chant Hanuman chalisa 11 times per day for a continuous period of 40 days",
+        "appLink": "com.bhaktapps.hanumanchalisa"
+    },
+    {
+        "appName": "Shiv Puran in Hindi",
+        "appImage": "shivpuran",
+        "appDescription": "This App by Bhakt Apps is dedicated to Shiv Bhakts who are true followers of Mahadev. Hindi Translation of Shiv Puran helps in understanding those who couldn't understand Sanskrit Shlokas of Shiv Puran. A must read for all Shiv Bhakts",
+        "appLink": "com.bhaktapps.shivpuran"
+    },
+    {
+        "appName": "Mudi Cleaner",
+        "appImage": "mudicleaner",
+        "appDescription": "Make your mobile phone faster. Mudi Cleaner helps you save your battery space and optimize phone performance by killing useless running background apps.",
+        "appLink": "com.bhaktapps.mudicleaner"
+    },
+    {
+        "appName": "Shiv Mandir",
+        "appImage": "shivmandir",
+        "appDescription": "Lord Shiva is the destroyer,of evil and the, transformer within the Trimurti. He is one of the Hindu trinity that includes Brahma and Vishnu. Bhakt Apps brings to you Lord Shiva 12 Jyotirlingas",
+        "appLink": "com.bhaktapps.shivmandir"
+    },
+    {
+        "appName": "Indian Hindu Temples",
+        "appImage": "indiantempleicon",
+        "appDescription": "A collection of most unique temples of India, including temple which becomes invisible",
+        "appLink": "com.bhaktapps.indiantemples"
+    }
+]

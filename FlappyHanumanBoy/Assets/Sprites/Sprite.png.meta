@@ -1,0 +1,1108 @@
+fileFormatVersion: 2
+guid: 8f2296c14849d48aba14a4d73989d02b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6251451809504726511
+    second: medal1
+  - first:
+      213: -5666552777093224069
+    second: medal2
+  - first:
+      213: 7183195401824034768
+    second: medal3
+  - first:
+      213: 6366529046394908241
+    second: medal4
+  - first:
+      213: 175962787396787636
+    second: medal5
+  - first:
+      213: -5125555198026612319
+    second: Patal Lok
+  - first:
+      213: -460009008014463613
+    second: Par Lok
+  - first:
+      213: -2210973394768525440
+    second: Yam Lok
+  - first:
+      213: -1278303141353753420
+    second: Swarg Lok
+  - first:
+      213: 5878697427789829685
+    second: Nark
+  - first:
+      213: -6264258568678072142
+    second: Satyug
+  - first:
+      213: -5169381219432646030
+    second: small_coin
+  - first:
+      213: -7938948767547733923
+    second: big_coin
+  - first:
+      213: 6105943167890795925
+    second: mega_coin
+  - first:
+      213: 509386604416939864
+    second: lock
+  - first:
+      213: 5294996605036385756
+    second: unselect
+  - first:
+      213: -8968834113577740606
+    second: wheel_stand
+  - first:
+      213: -2756971324452006476
+    second: buttonbg
+  - first:
+      213: -3109212629624274104
+    second: coin icon
+  - first:
+      213: -1474523002606144131
+    second: great
+  - first:
+      213: 2256980624823195114
+    second: leaderboard
+  - first:
+      213: -4416950803866732856
+    second: wonderful
+  - first:
+      213: 183344003382628889
+    second: Sprite_22
+  - first:
+      213: 871086884471538943
+    second: obstacle
+  - first:
+      213: 7235436644145543499
+    second: Sprite_24
+  - first:
+      213: -3357430747320705636
+    second: Sprite_25
+  - first:
+      213: 942166043653500951
+    second: Sprite_26
+  - first:
+      213: 2142186848213088292
+    second: Pause
+  - first:
+      213: 3773393419071983804
+    second: Home
+  - first:
+      213: -8813222843233238766
+    second: Restart
+  - first:
+      213: 3498880103269695572
+    second: spin_small
+  - first:
+      213: 2439826247251700659
+    second: Coin
+  - first:
+      213: 6996087246619375067
+    second: Back
+  - first:
+      213: -8824530639807737518
+    second: small_wheelstand
+  - first:
+      213: 6890394788297183727
+    second: Store
+  - first:
+      213: -4702584261734158326
+    second: Sound
+  - first:
+      213: 8875044234165373880
+    second: Play
+  - first:
+      213: 3597957421318498036
+    second: SpinWheel
+  - first:
+      213: -5517738199874594779
+    second: Sprite_38
+  - first:
+      213: -1390491782423984344
+    second: Sprite_39
+  - first:
+      213: -4745284827988138515
+    second: close
+  - first:
+      213: 2708990064600995367
+    second: Your Score
+  - first:
+      213: 8515374864889609149
+    second: High Score
+  - first:
+      213: 6457723135209396084
+    second: spinwheel_arrow
+  - first:
+      213: -8922835645303926111
+    second: super_mega_coin
+  - first:
+      213: 1690230928675606244
+    second: right_panel
+  - first:
+      213: -5504805670752825422
+    second: select
+  - first:
+      213: -2739898192194383532
+    second: spinwheel_arrow
+  - first:
+      213: -277744315898172097
+    second: Your Score
+  - first:
+      213: -277744315898172097
+    second: Sprite_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medal1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1127ffb63b16e39a0800000000000000
+      internalID: -6251451809504726511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 9
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79ea5c954c5c51b0800000000000000
+      internalID: -5666552777093224069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal3
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 9
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfd0f5e826dfa360800000000000000
+      internalID: 7183195401824034768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal4
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 9
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e2396bf647a5850800000000000000
+      internalID: 6366529046394908241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal5
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 9
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd197c0935217200800000000000000
+      internalID: 175962787396787636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Patal Lok
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a187f824be5ed8b0800000000000000
+      internalID: -5125555198026612319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Par Lok
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 162
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d61d39e38bd99f0800000000000000
+      internalID: -460009008014463613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yam Lok
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 325
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0878bf4696b0151e0800000000000000
+      internalID: -2210973394768525440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swarg Lok
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 162
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4f750d01e824ee0800000000000000
+      internalID: -1278303141353753420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nark
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 163
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5365a65f924559150800000000000000
+      internalID: 5878697427789829685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Satyug
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 325
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b02fb07502e019a0800000000000000
+      internalID: -6264258568678072142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_coin
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 493
+        width: 260
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a34236b2ba248b0800000000000000
+      internalID: -5169381219432646030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_coin
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 495
+        width: 260
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58ca44882033d190800000000000000
+      internalID: -7938948767547733923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mega_coin
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 493
+        width: 260
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59daad4e5faacb450800000000000000
+      internalID: 6105943167890795925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lock
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 134
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8573d99fa64b11700800000000000000
+      internalID: 509386604416939864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unselect
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 132
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5d712bb5b9b7940800000000000000
+      internalID: 5294996605036385756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wheel_stand
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 0
+        width: 330
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c61bc284ec488380800000000000000
+      internalID: -8968834113577740606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonbg
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 239
+        width: 236
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5991eff254db9d0800000000000000
+      internalID: -2756971324452006476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin icon
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8434610369bd9d4d0800000000000000
+      internalID: -3109212629624274104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: great
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 78
+        width: 74
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75b4883421798be0800000000000000
+      internalID: -1474523002606144131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leaderboard
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 156
+        width: 140
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae596879be7625f10800000000000000
+      internalID: 2256980624823195114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderful
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 0
+        width: 125
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6b52955a6d3b2c0800000000000000
+      internalID: -4416950803866732856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstacle
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 0
+        width: 150
+        height: 755
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff48d6df7e8b61c00800000000000000
+      internalID: 871086884471538943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pause
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 302
+        width: 142
+        height: 150
+      alignment: 9
+      pivot: {x: 0.52364343, y: 0.58868814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4283142b6939abd10800000000000000
+      internalID: 2142186848213088292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 156
+        width: 140
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb015958259cd5430800000000000000
+      internalID: 3773393419071983804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restart
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 0
+        width: 142
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5127738, y: 0.5129061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21189beb48421b580800000000000000
+      internalID: -8813222843233238766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 128
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbac1d8b010cd120800000000000000
+      internalID: 2439826247251700659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 0
+        width: 140
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd57360b848171160800000000000000
+      internalID: 6996087246619375067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Store
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1
+        width: 139
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe118a69d899f9f50800000000000000
+      internalID: 6890394788297183727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 625
+        width: 221
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb4e4f75bd7a2b70800000000000000
+      internalID: 8875044234165373880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpinWheel
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 434
+        width: 430
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f66bae36338ee130800000000000000
+      internalID: 3597957421318498036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 779
+        width: 289
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5281fd8675e0d63b0800000000000000
+      internalID: -5517738199874594779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 748
+        width: 662
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827c48d471bf3bce0800000000000000
+      internalID: -1390491782423984344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: close
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 153
+        width: 140
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de567bd279c552eb0800000000000000
+      internalID: -4745284827988138515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: High Score
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 628
+        width: 121
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbf80fb250bc2670800000000000000
+      internalID: 8515374864889609149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: super_mega_coin
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 360
+        width: 260
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2577c7148bb2480800000000000000
+      internalID: -8922835645303926111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_panel
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 185
+        width: 119
+        height: 679
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee861c0318e47710800000000000000
+      internalID: 1690230928675606244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: select
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 132
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfc83d78600b93b0800000000000000
+      internalID: -5504805670752825422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spinwheel_arrow
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 5
+        width: 74
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4775afb1af07e9950800000000000000
+      internalID: 6457723135209396084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Your Score
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 486
+        width: 116
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d61882401452cf0800000000000000
+      internalID: -277744315898172097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

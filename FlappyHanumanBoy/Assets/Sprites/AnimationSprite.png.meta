@@ -1,0 +1,1561 @@
+fileFormatVersion: 2
+guid: f515c07fe59ec417a932a9d8d5abaefe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3551461470264695732
+    second: exit_blocker1
+  - first:
+      213: -9200760115217844983
+    second: exit_blocker2
+  - first:
+      213: 8337292642474085308
+    second: Sonu
+  - first:
+      213: -1126198198781106393
+    second: Sonu
+  - first:
+      213: -1108884127798379838
+    second: Sonu
+  - first:
+      213: 2648048474973437057
+    second: Pinki
+  - first:
+      213: -6388108197773704325
+    second: Karan
+  - first:
+      213: 8581887728473349355
+    second: Neha
+  - first:
+      213: 5072788557675181687
+    second: Rajiv
+  - first:
+      213: 5230655568260734973
+    second: Astha
+  - first:
+      213: 8045413727021876563
+    second: Astha2
+  - first:
+      213: 1553388816706806614
+    second: AnimationSprite_11
+  - first:
+      213: -6120546409602704444
+    second: tap1
+  - first:
+      213: -8320349103353863736
+    second: AnimationSprite_13
+  - first:
+      213: 1623976187614228939
+    second: coin_value_box
+  - first:
+      213: -2706092311957949066
+    second: flyinghanuman4
+  - first:
+      213: 5322575213496544600
+    second: AnimationSprite_16
+  - first:
+      213: -3022202118412837705
+    second: Astha3
+  - first:
+      213: 2230050511508764953
+    second: Rajiv1
+  - first:
+      213: -7342583781742490676
+    second: Rajiv4
+  - first:
+      213: -6664197126444335694
+    second: Rajiv3
+  - first:
+      213: 3624647061603031086
+    second: Rajiv4
+  - first:
+      213: -3795348628193227465
+    second: Sonu
+  - first:
+      213: 2307082509655904868
+    second: Monu
+  - first:
+      213: -2406255825202715470
+    second: Pinki
+  - first:
+      213: -7945534570447219084
+    second: karan
+  - first:
+      213: -1808516812715735702
+    second: Neha
+  - first:
+      213: -3965277493868197556
+    second: Rajiv
+  - first:
+      213: 1833582713925232625
+    second: Astha
+  - first:
+      213: 9032157252480219279
+    second: AnimationSprite_29
+  - first:
+      213: -6544469023325484998
+    second: AnimationSprite_30
+  - first:
+      213: 8573301337118530169
+    second: AnimationSprite_31
+  - first:
+      213: 5986804109005808180
+    second: AnimationSprite_32
+  - first:
+      213: 1402259020172664469
+    second: AnimationSprite_33
+  - first:
+      213: 3089425900863912
+    second: AnimationSprite_34
+  - first:
+      213: -7580711275275510108
+    second: AnimationSprite_35
+  - first:
+      213: -8953997948329098393
+    second: AnimationSprite_36
+  - first:
+      213: 8313507322469578985
+    second: AnimationSprite_37
+  - first:
+      213: 8806286821421082548
+    second: AnimationSprite_38
+  - first:
+      213: -1838102834601723839
+    second: AnimationSprite_39
+  - first:
+      213: 3341506006114377084
+    second: AnimationSprite_40
+  - first:
+      213: 8609557596094403915
+    second: AnimationSprite_41
+  - first:
+      213: 1741298596105985532
+    second: AnimationSprite_42
+  - first:
+      213: 948361882328255767
+    second: AnimationSprite_43
+  - first:
+      213: -5492599254307063324
+    second: tap2
+  - first:
+      213: 7879491931059757791
+    second: AnimationSprite_45
+  - first:
+      213: -3207502787702139679
+    second: AnimationSprite_46
+  - first:
+      213: 6684330496342140845
+    second: AnimationSprite_47
+  - first:
+      213: 6806465162997744652
+    second: hit1
+  - first:
+      213: 3071499738497950246
+    second: AnimationSprite_49
+  - first:
+      213: -8558799799537960434
+    second: hit2
+  - first:
+      213: 1027602005813978251
+    second: AnimationSprite_51
+  - first:
+      213: 1209386102030518190
+    second: hit3
+  - first:
+      213: 2395304606153304398
+    second: hit4
+  - first:
+      213: 7325516468826624691
+    second: tap3
+  - first:
+      213: -904460074985171558
+    second: AnimationSprite_55
+  - first:
+      213: -235207751588900288
+    second: AnimationSprite_56
+  - first:
+      213: 5830195961859136852
+    second: AnimationSprite_57
+  - first:
+      213: -6941070080773583691
+    second: AnimationSprite_58
+  - first:
+      213: -2637883391209452736
+    second: AnimationSprite_59
+  - first:
+      213: 8975296017439065926
+    second: AnimationSprite_60
+  - first:
+      213: 851530956348237604
+    second: AnimationSprite_61
+  - first:
+      213: 6515060276759989970
+    second: watch_ad1
+  - first:
+      213: -2181810749010001483
+    second: watch_ad2
+  - first:
+      213: -2261027577499264981
+    second: watch_ad3
+  - first:
+      213: 7602008724049426384
+    second: Sonu1
+  - first:
+      213: 8879190967771631262
+    second: AnimationSprite_66
+  - first:
+      213: -17392509884406119
+    second: AnimationSprite_67
+  - first:
+      213: -4756867182111806354
+    second: karan1
+  - first:
+      213: 1117211168785746078
+    second: Monu1
+  - first:
+      213: 3188948516936502189
+    second: Neha1
+  - first:
+      213: 4882767556014877901
+    second: Sonu2
+  - first:
+      213: -2581500791827501637
+    second: Pinki1
+  - first:
+      213: -7114001511028307715
+    second: karan2
+  - first:
+      213: -5148794810265095942
+    second: Monu2
+  - first:
+      213: 697419027861516754
+    second: Neha2
+  - first:
+      213: -2859519736761249677
+    second: Astha4
+  - first:
+      213: -3276753009613724670
+    second: exit_blocker3
+  - first:
+      213: 9150914746131044356
+    second: exit_blocker4
+  - first:
+      213: -4315315167372561013
+    second: flyinghanuman1
+  - first:
+      213: 2065315066939234049
+    second: flyinghanuman2
+  - first:
+      213: 3418684602289122015
+    second: Sonu3
+  - first:
+      213: -2076496200649331339
+    second: Pinki3
+  - first:
+      213: -103792641539635506
+    second: karan3
+  - first:
+      213: 3996200852685983853
+    second: Monu3
+  - first:
+      213: 2066624730658081076
+    second: Neha3
+  - first:
+      213: 2256846794298241807
+    second: Astha1
+  - first:
+      213: -5841675712774705204
+    second: Sonu
+  - first:
+      213: 1500244052126851034
+    second: Sonu
+  - first:
+      213: 4944322577973901011
+    second: Pinki
+  - first:
+      213: 9110177864997675736
+    second: Karan
+  - first:
+      213: 5614499290557173
+    second: Neha
+  - first:
+      213: -7687495248902444799
+    second: Rajiv
+  - first:
+      213: -94865636367230176
+    second: Astha
+  - first:
+      213: -5841675712774705204
+    second: Pinki2
+  - first:
+      213: 1500244052126851034
+    second: Sonu
+  - first:
+      213: 4944322577973901011
+    second: karan4
+  - first:
+      213: 4992676618928350948
+    second: exit_blocker1
+  - first:
+      213: 2571722307464361792
+    second: exit_blocker2
+  - first:
+      213: 243286219667804640
+    second: Sonu4
+  - first:
+      213: -1126198198781106393
+    second: Pinki2
+  - first:
+      213: -1108884127798379838
+    second: Sonu
+  - first:
+      213: 9110177864997675736
+    second: AnimationSprite_6
+  - first:
+      213: 5614499290557173
+    second: AnimationSprite_7
+  - first:
+      213: -7687495248902444799
+    second: AnimationSprite_8
+  - first:
+      213: -94865636367230176
+    second: AnimationSprite_9
+  - first:
+      213: -7161515440707009447
+    second: tap1
+  - first:
+      213: -6749024999553977400
+    second: AnimationSprite_13
+  - first:
+      213: 3695595395954430160
+    second: AnimationSprite_14
+  - first:
+      213: -6770950887140749658
+    second: tap2
+  - first:
+      213: -579324731948555537
+    second: hit1
+  - first:
+      213: -6282524588274968974
+    second: hit2
+  - first:
+      213: -651329576796604908
+    second: hit3
+  - first:
+      213: 2078445718645055758
+    second: hit4
+  - first:
+      213: -8122567830736567898
+    second: tap3
+  - first:
+      213: 7830680308621831790
+    second: AnimationSprite_55
+  - first:
+      213: -6887882162645803009
+    second: watch_ad1
+  - first:
+      213: 1500244052126851034
+    second: Pinki4
+  - first:
+      213: -1126198198781106393
+    second: flyinghanuman3
+  - first:
+      213: 2478281486293988775
+    second: Monu4
+  - first:
+      213: -1108884127798379838
+    second: Neha4
+  - first:
+      213: -3947125087026333401
+    second: Rajiv2
+  - first:
+      213: -4008643139277945984
+    second: circle
+  - first:
+      213: -3947125087026333401
+    second: AnimationSprite_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: exit_blocker1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 877
+        width: 160
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44e267fb9ca6bec0800000000000000
+      internalID: -3551461470264695732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exit_blocker2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 877
+        width: 170
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905bbd44c65505080800000000000000
+      internalID: -9200760115217844983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap1
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 789
+        width: 217
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb9650f7737f0ba0800000000000000
+      internalID: -6120546409602704444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimationSprite_13
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 473
+        width: 310
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 40, z: 40, w: 40}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c16a57d29e288c80800000000000000
+      internalID: -8320349103353863736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap2
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 578
+        width: 217
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9b379441e56c3b0800000000000000
+      internalID: -5492599254307063324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 552
+        width: 400
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c044d88e00c657e50800000000000000
+      internalID: 6806465162997744652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 552
+        width: 400
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0afad4cde8093980800000000000000
+      internalID: -8558799799537960434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 552
+        width: 393
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7c2df804a98c010800000000000000
+      internalID: 1209386102030518190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit4
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 552
+        width: 393
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49ef9239d4dd3120800000000000000
+      internalID: 2395304606153304398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap3
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 470
+        width: 217
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b25fa88a6679a560800000000000000
+      internalID: 7325516468826624691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimationSprite_55
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 472
+        width: 542
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a955cf49a56b273f0800000000000000
+      internalID: -904460074985171558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: watch_ad1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 277
+        width: 360
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de898eadc42a6a50800000000000000
+      internalID: 6515060276759989970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: watch_ad2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 277
+        width: 360
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1412afea6a8b1e0800000000000000
+      internalID: -2181810749010001483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: watch_ad3
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 277
+        width: 360
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b285bcfc5673f90e0800000000000000
+      internalID: -2261027577499264981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonu1
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 304
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7f26848a2cf7960800000000000000
+      internalID: 7602008724049426384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karan1
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c238630863cfdb0800000000000000
+      internalID: -4756867182111806354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monu1
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98c29683a1218f00800000000000000
+      internalID: 1117211168785746078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neha1
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 309
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab4207c7cb614c20800000000000000
+      internalID: 3188948516936502189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonu2
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 152
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcca111e83313c340800000000000000
+      internalID: 4882767556014877901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinki1
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 151
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd6bbb05baac2cd0800000000000000
+      internalID: -2581500791827501637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karan2
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 306
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8c09b315df54d90800000000000000
+      internalID: -7114001511028307715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monu2
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 302
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af036c8466ecb88b0800000000000000
+      internalID: -5148794810265095942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neha2
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 152
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1b84729eabda900800000000000000
+      internalID: 697419027861516754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astha4
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 154
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370902623f1f058d0800000000000000
+      internalID: -2859519736761249677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exit_blocker3
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 877
+        width: 173
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204284daf72a682d0800000000000000
+      internalID: -3276753009613724670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exit_blocker4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 882
+        width: 175
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408560d5a749efe70800000000000000
+      internalID: 9150914746131044356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flyinghanuman1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 348
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8537e208bbec14c0800000000000000
+      internalID: -4315315167372561013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flyinghanuman2
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 348
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107dc226c1979ac10800000000000000
+      internalID: 2065315066939234049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonu3
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda6a86688b917f20800000000000000
+      internalID: 3418684602289122015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinki3
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 301
+        width: 196
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d29de05bdce23e0800000000000000
+      internalID: -2076496200649331339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karan3
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 153
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec60bb674214f8ef0800000000000000
+      internalID: -103792641539635506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monu3
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 152
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d601673b08b557730800000000000000
+      internalID: 3996200852685983853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neha3
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43989ea3e302eac10800000000000000
+      internalID: 2066624730658081076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astha1
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 153
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0330aeb33ee15f10800000000000000
+      internalID: 2256846794298241807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinki2
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf6907c3e23eeea0800000000000000
+      internalID: -5841675712774705204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flyinghanuman3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 0
+        width: 342
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727a7fe74b0fe50f0800000000000000
+      internalID: -1126198198781106393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astha2
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355c036882d07af60800000000000000
+      internalID: 8045413727021876563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astha3
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 303
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcd1948f2bfe06d0800000000000000
+      internalID: -3022202118412837705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonu
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 920
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73dc6c10886345bc0800000000000000
+      internalID: -3795348628193227465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monu
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 919
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4629e8fa157640020800000000000000
+      internalID: 2307082509655904868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinki
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 920
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4e31c63134b9ed0800000000000000
+      internalID: -2406255825202715470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karan
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 919
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47658e9c76acbb190800000000000000
+      internalID: -7945534570447219084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neha
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 920
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65c1cf6a8bd6e6e0800000000000000
+      internalID: -1808516812715735702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astha
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 920
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f76fc973c1327910800000000000000
+      internalID: 1833582713925232625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonu4
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 302
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e11c0e1783506300800000000000000
+      internalID: 243286219667804640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinki4
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 150
+        width: 194
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfd96b4400f1d410800000000000000
+      internalID: 1500244052126851034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karan4
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6f3134033cd9440800000000000000
+      internalID: 4944322577973901011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monu4
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 0
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5fafb91ef946220800000000000000
+      internalID: 2478281486293988775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neha4
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 302
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca3289c2c37c90f0800000000000000
+      internalID: -1108884127798379838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 456
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0830804bd407e58c0800000000000000
+      internalID: -4008643139277945984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimationSprite_2
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 788
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72933c765aef839c0800000000000000
+      internalID: -3947125087026333401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
