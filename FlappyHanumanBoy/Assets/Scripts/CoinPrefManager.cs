@@ -74,8 +74,7 @@ public class CoinPrefManager : MonoBehaviour{
 
                 //animate coin to target position
                 float duration = Random.Range (minAnimDuration, maxAnimDuration);
-
-                coinl.transform.DOMove(targetPosition, duration)
+                coinl.transform.DOMove(targetPosition,duration)
                     .SetEase(easeType)
                     .OnComplete(() =>
                     {

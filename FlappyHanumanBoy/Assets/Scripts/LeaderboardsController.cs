@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GooglePlayGames;
+//using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 
 public class LeaderboardsController : MonoBehaviour
@@ -11,7 +11,7 @@ public class LeaderboardsController : MonoBehaviour
     private const string LEADERBOARDS_SCORE = "CgkI74_B_vEQEAIQBg";
 
     void Start(){
-        PlayGamesPlatform.Activate();
+        //PlayGamesPlatform.Activate();
     }
 
     void OnLevelWasLoaded(){
@@ -34,7 +34,7 @@ public class LeaderboardsController : MonoBehaviour
     public void ConnectOrDisconnectOnGooglePlayames(){
 
         if (Social.localUser.authenticated)  {
-            PlayGamesPlatform.Instance.SignOut();
+           // PlayGamesPlatform.Instance.SignOut();
 
         }
         else{
@@ -47,7 +47,7 @@ public class LeaderboardsController : MonoBehaviour
 
     public void OpenLeaderboardScore(){
         if (Social.localUser.authenticated) {
-            PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);
+          //  PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);
             Debug.Log("Player is authenticated");
         }
         else { Debug.Log("No Player is not authenticated"); }

@@ -145,8 +145,9 @@ public class DailySpinManager : MonoBehaviour{
 
     public void WatchAdStarted(){
         Debug.Log("Watch Ad Started");
-        textRewardedAdStatus.text = "Loading Ad...";
-        RequestRewardAd();
+        textRewardedAdStatus.text = "No Ad Available";
+       // textRewardedAdStatus.text = "Loading Ad...";
+        //RequestRewardAd();
     }
 
     //Function for testing click events
