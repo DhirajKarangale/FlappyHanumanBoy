@@ -34,6 +34,7 @@ public class CoinPrefManager : MonoBehaviour{
     // Start is called before the first frame update
     void Start() {
         coins = PlayerPrefs.GetInt("Coins", 0);
+
     }
 
     void Awake(){

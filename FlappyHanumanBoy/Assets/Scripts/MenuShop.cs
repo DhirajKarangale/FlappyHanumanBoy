@@ -38,7 +38,7 @@ public class MenuShop : MonoBehaviour
     GameObject g;
     Button AvatarImageButton, EnvImageButton;
     private ulong lastTimerSpunTime;
-    private float msToWaitForSpin = 924000.0f;
+    private float msToWaitForSpin = 2000000.0f;
 
     [SerializeField]
     private Text SmallSpinWheelTimerText;
