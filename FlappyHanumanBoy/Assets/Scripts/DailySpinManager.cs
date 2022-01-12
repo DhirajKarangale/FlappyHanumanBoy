@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using GoogleMobileAds.Api;
+using UnityEngine.Advertisements;
 
-public class DailySpinManager : MonoBehaviour{
+public class DailySpinManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
+{
 
     int randVal;
     private float timeInterval;
@@ -38,14 +38,19 @@ public class DailySpinManager : MonoBehaviour{
     [SerializeField]
     private AudioClip coinClip;
 
-    private RewardBasedVideoAd adReward;
+    // private RewardBasedVideoAd adReward;
     private string idReward;
 
     [SerializeField]
     private Text textRewardedAdStatus;
 
+    [SerializeField] string _androidAdUnitId = "Rewarded_Android";
+    string _adUnitId = "Rewarded_Android";
+
     // Start is called before the first frame update
-    void Start(){
+    void Start()
+    {
+        Advertisement.Initialize("4557605", true);
         //  wheelButton = GetComponent<Button>();
         lastTimerSpunTime = ulong.Parse(PlayerPrefs.GetString("LastTimerSpunTime", "0"));
         isCoroutine = true;
@@ -54,11 +59,13 @@ public class DailySpinManager : MonoBehaviour{
         hitWheelButton = GameObject.FindWithTag("HitWheelButton");
 
 
-        if (IsSpinWheelReady()){
+        if (IsSpinWheelReady())
+        {
             hitButton.SetActive(true);
             hitButtonAlias.SetActive(true);
         }
-        else{
+        else
+        {
             //   wheelButton.interactable = true;
             hitButton.SetActive(false);
             hitButtonAlias.SetActive(false);
@@ -66,15 +73,17 @@ public class DailySpinManager : MonoBehaviour{
             watchAdButtonHolder.SetActive(true);
         }
 
-        adReward = RewardBasedVideoAd.Instance;
-        MobileAds.Initialize(initStatus => { });
+        //       adReward = RewardBasedVideoAd.Instance;
+        //       MobileAds.Initialize(initStatus => { });
         idReward = "ca-app-pub-3092873485358336/7734204616";
     }
 
     // Update is called once per frame
-    void Update(){
+    void Update()
+    {
 
-        if (IsSpinWheelReady()){
+        if (IsSpinWheelReady())
+        {
             //  wheelButton.interactable = false;
             hitButton.SetActive(true);
             hitButtonAlias.SetActive(true);
@@ -99,10 +108,12 @@ public class DailySpinManager : MonoBehaviour{
 
 
 
-    private bool IsSpinWheelReady(){
+    private bool IsSpinWheelReady()
+    {
         CalculateTimerTime();
 
-        if (CalculateTimerTime() < 0){
+        if (CalculateTimerTime() < 0)
+        {
             spinWheelTimerText.text = "Ready!";
             return true;
         }
@@ -110,7 +121,8 @@ public class DailySpinManager : MonoBehaviour{
 
     }
 
-    private float CalculateTimerTime(){
+    private float CalculateTimerTime()
+    {
         ulong diff = ((ulong)DateTime.Now.Ticks - lastTimerSpunTime);
         ulong m = diff / TimeSpan.TicksPerMillisecond;
         float secondsLeft = (float)(msToWaitForSpin - m) / 1000.0f;
@@ -119,18 +131,22 @@ public class DailySpinManager : MonoBehaviour{
     }
 
 
-    public void SpinTheWheel(){
+    public void SpinTheWheel()
+    {
 
-        if (isCoroutine){
+        if (isCoroutine)
+        {
             StartCoroutine(Spin());
 
             lastTimerSpunTime = (ulong)DateTime.Now.Ticks;
             PlayerPrefs.SetString("LastTimerSpunTime", lastTimerSpunTime.ToString());
 
-        }else{ print("no spin"); }
+        }
+        else { print("no spin"); }
     }
 
-    public void CollectCoin(){
+    public void CollectCoin()
+    {
         Debug.Log("Coin Collected");
         hitButton.SetActive(false);
         hitButtonAlias.SetActive(false);
@@ -143,20 +159,24 @@ public class DailySpinManager : MonoBehaviour{
         audioSource.PlayOneShot(coinClip);
     }
 
-    public void WatchAdStarted(){
+    public void WatchAdStarted()
+    {
         Debug.Log("Watch Ad Started");
-        textRewardedAdStatus.text = "No Ad Available";
-       // textRewardedAdStatus.text = "Loading Ad...";
+        //textRewardedAdStatus.text = "No Ad Available";
+        // textRewardedAdStatus.text = "Loading Ad...";
         //RequestRewardAd();
+        ShowAd();
     }
 
     //Function for testing click events
 
-    public void TestInvisibleButton(){
+    public void TestInvisibleButton()
+    {
         Debug.Log("working!");
     }
 
-    private IEnumerator Spin(){
+    private IEnumerator Spin()
+    {
         //Hit Animation Here
         animHitButton.SetTrigger("SpiningTrig");
         isCoroutine = false;
@@ -164,7 +184,8 @@ public class DailySpinManager : MonoBehaviour{
 
         timeInterval = 0.0001f * Time.deltaTime * 2;
 
-        for (int i = 0; i < randVal; i++){
+        for (int i = 0; i < randVal; i++)
+        {
 
             transform.Rotate(0, 0, (totalAngle / 2));
 
@@ -197,9 +218,11 @@ public class DailySpinManager : MonoBehaviour{
         watchAdButtonHolder.SetActive(false);
 
         //score value check
-        for (int i = 0; i < section; i++){
+        for (int i = 0; i < section; i++)
+        {
 
-            if (finalAngle == i * totalAngle){
+            if (finalAngle == i * totalAngle)
+            {
                 winText.text = PrizeName[i].ToString();
                 scoreValueOfSpin = PrizeName[i];
             }
@@ -210,59 +233,177 @@ public class DailySpinManager : MonoBehaviour{
 
     #region Reward video methods ---------------------------------------------
 
-    public void RequestRewardAd()
-    {
-        AdRequest request = AdRequestBuild();
+    // public void RequestRewardAd()
+    // {
+    //     AdRequest request = AdRequestBuild();
 
-        adReward.LoadAd(request, idReward);
+    //     adReward.LoadAd(request, idReward);
 
-        //adReward.LoadAd(request);
+    //     //adReward.LoadAd(request);
 
-        adReward.OnAdLoaded += this.HandleOnRewardedAdLoaded;
-        adReward.OnAdRewarded += this.HandleOnAdRewarded;
-        adReward.OnAdClosed += this.HandleOnRewardedAdClosed;
-    }
+    //     adReward.OnAdLoaded += this.HandleOnRewardedAdLoaded;
+    //     adReward.OnAdRewarded += this.HandleOnAdRewarded;
+    //     adReward.OnAdClosed += this.HandleOnRewardedAdClosed;
+    // }
 
-    public void ShowRewardAd(){
-        if (adReward.IsLoaded()) { adReward.Show(); }
-        else { textRewardedAdStatus.text = "Come Tommorrow! No More Ads Today"; }
-    }
+    // public void ShowRewardAd(){
+    //     if (adReward.IsLoaded()) { adReward.Show(); }
+    //     else { textRewardedAdStatus.text = "Come Tommorrow! No More Ads Today"; }
+    // }
 
     //events
-    public void HandleOnRewardedAdLoaded(object sender, EventArgs args){
-        //ad loaded
-        ShowRewardAd();
-        
-    }
+    // public void HandleOnRewardedAdLoaded(object sender, EventArgs args){
+    //     //ad loaded
+    //     ShowRewardAd();
 
-    public void HandleOnAdRewarded(object sender, EventArgs args){
-        //user finished watching ad
-        hitButton.SetActive(true);
-        hitButtonAlias.SetActive(true);
-        collectCoinHolder.SetActive(false);
-        watchAdButtonHolder.SetActive(false);
-        spinWheelTimerText.text = "Ready!";
-    }
+    // }
 
-    public void HandleOnRewardedAdClosed(object sender, EventArgs args){
-        //ad closed (even if not finished watching)
-        
-        adReward.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
-        adReward.OnAdRewarded -= this.HandleOnAdRewarded;
-        adReward.OnAdClosed -= this.HandleOnRewardedAdClosed;
-    }
+    // public void HandleOnAdRewarded(object sender, EventArgs args)
+    // {
+    //     //user finished watching ad
+    //     hitButton.SetActive(true);
+    //     hitButtonAlias.SetActive(true);
+    //     collectCoinHolder.SetActive(false);
+    //     watchAdButtonHolder.SetActive(false);
+    //     spinWheelTimerText.text = "Ready!";
+    // }
+
+    // public void HandleOnRewardedAdClosed(object sender, EventArgs args){
+    //     //ad closed (even if not finished watching)
+
+    //     adReward.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
+    //     adReward.OnAdRewarded -= this.HandleOnAdRewarded;
+    //     adReward.OnAdClosed -= this.HandleOnRewardedAdClosed;
+    // }
 
     #endregion
 
-    AdRequest AdRequestBuild(){
-        return new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator)
-            .AddTestDevice("CC9DF9C9E1DABC49E2EDEF7455F8800D")
-            .TagForChildDirectedTreatment(false)
-            .Build();
+    // AdRequest AdRequestBuild(){
+    //     return new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator)
+    //         .AddTestDevice("CC9DF9C9E1DABC49E2EDEF7455F8800D")
+    //         .TagForChildDirectedTreatment(false)
+    //         .Build();
+    // }
+    // void OnDestroy(){
+    //     adReward.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
+    //     adReward.OnAdRewarded -= this.HandleOnAdRewarded;
+    //     adReward.OnAdClosed -= this.HandleOnRewardedAdClosed;
+    // }
+
+
+
+
+    // public void ShowRewardedVideoAd()
+    // {
+    //     Advertisement.Show("Rewarded_Android");
+    //     // if (Advertisement.IsReady("Rewarded_Android"))
+    //     // {
+    //     //     Advertisement.Show("Rewarded_Android");
+    //     //     Debug.Log("Showing Ad");
+    //     // }
+    //     // else
+    //     // {
+    //     //     Debug.Log("Reward Ad is not loaded");
+    //     //     if (textRewardedAdStatus != null)
+    //     //     {
+    //     //         textRewardedAdStatus.color = Color.white;
+    //     //         textRewardedAdStatus.text = "Ad not Loaded Try Again";
+    //     //     }
+    //     // }
+    // }
+
+    // public void OnUnityAdsDidError(string message)
+    // {
+    //     textRewardedAdStatus.color = Color.white;
+    //     textRewardedAdStatus.text = "Error" + message;
+    //     Debug.Log("Showing Ad Error");
+    // }
+
+    // public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
+    // {
+    //     if ((placementId == "Rewarded_Android") && (showResult == ShowResult.Finished))
+    //     {
+    //         // Grant a reward.
+    //         hitButton.SetActive(true);
+    //         hitButtonAlias.SetActive(true);
+    //         collectCoinHolder.SetActive(false);
+    //         watchAdButtonHolder.SetActive(false);
+    //         spinWheelTimerText.text = "Ready!";
+    //         //Advertisement.RemoveListener(this);
+    //         textRewardedAdStatus.color = Color.green;
+    //         textRewardedAdStatus.text = "You Received Reward";
+    //         Debug.Log("Get Reward " + scoreValueOfSpin);
+    //     }
+    // }
+
+
+
+
+    // Load content to the Ad Unit:
+    public void LoadAd()
+    {
+        // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
+        Debug.Log("Loading Ad: " + _adUnitId);
+        Advertisement.Load("Rewarded_Android");
+        textRewardedAdStatus.text = "Loading Ad";
     }
-    void OnDestroy(){
-        adReward.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
-        adReward.OnAdRewarded -= this.HandleOnAdRewarded;
-        adReward.OnAdClosed -= this.HandleOnRewardedAdClosed;
+
+    // If the ad successfully loads, add a listener to the button and enable it:
+    public void OnUnityAdsAdLoaded(string adUnitId)
+    {
+        Debug.Log("Ad Loaded: " + adUnitId);
+        textRewardedAdStatus.text = "Ad Loaded";
+
+        if (adUnitId.Equals(_adUnitId))
+        {
+
+        }
     }
+
+    // Implement a method to execute when the user clicks the button.
+    public void ShowAd()
+    {
+        Debug.Log("Showing Ad");
+        // Then show the ad:
+       Advertisement.Show(_adUnitId);
+    }
+
+    // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
+    public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
+    {
+        if (adUnitId.Equals("Rewarded_Android") && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
+        {
+            Debug.Log("Unity Ads Rewarded Ad Completed");
+            textRewardedAdStatus.text = "You Got Reward";
+
+            // Grant a reward.
+            hitButton.SetActive(true);
+            hitButtonAlias.SetActive(true);
+            collectCoinHolder.SetActive(false);
+            watchAdButtonHolder.SetActive(false);
+            spinWheelTimerText.text = "Ready!";
+
+            // Load another ad:
+            Advertisement.Load("Rewarded_Android");
+        }
+    }
+
+    // Implement Load and Show Listener error callbacks:
+    public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
+    {
+        Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
+        textRewardedAdStatus.text = "Error loading Ad";
+        // Use the error details to determine whether to try to load another ad.
+    }
+
+    public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
+    {
+        textRewardedAdStatus.text = "Error showing Ad";
+        Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
+        // Use the error details to determine whether to try to load another ad.
+    }
+
+    public void OnUnityAdsShowStart(string adUnitId) { }
+    public void OnUnityAdsShowClick(string adUnitId) { }
+
 }

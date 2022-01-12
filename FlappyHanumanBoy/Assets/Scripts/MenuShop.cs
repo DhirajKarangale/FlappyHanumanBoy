@@ -19,6 +19,7 @@ public class MenuShop : MonoBehaviour
     public List<AvatarEnvItemList> avatarItemLists;
     public List<AvatarEnvItemList> envItemLists;
 
+    [SerializeField] GameObject exitPanel;
     [SerializeField] GameObject AvatarUITemplate;
     [SerializeField] GameObject EnvironmentUITemplate;
     [SerializeField] Transform AvatarsScrollView;
@@ -49,6 +50,7 @@ public class MenuShop : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+        exitPanel.SetActive(false);
         // Add All Avatars and Environment To Menu
         lastTimerSpunTime = ulong.Parse(PlayerPrefs.GetString("LastTimerSpunTime", "0"));
         CheckPrefPlayerSelection();
@@ -58,6 +60,11 @@ public class MenuShop : MonoBehaviour
     }
 
     void Update(){
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            exitPanel.SetActive(true);
+        }
 
         if (IsSpinWheelReady()){
             SmallSpinWheelTimerText.text = "Ready!";
@@ -294,6 +301,16 @@ public class MenuShop : MonoBehaviour
         if (CalculateTimerTime() < 0)   { return true; }
         else { return false; }
 
+    }
+
+    public void ExitYesButton()
+    {
+        Application.Quit();
+    }
+
+    public void ExitNoButton()
+    {
+        exitPanel.SetActive(false);
     }
 
 

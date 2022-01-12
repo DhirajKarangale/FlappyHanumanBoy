@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using GoogleMobileAds.Api;
+// using GoogleMobileAds.Api;
 
 public class GameplayController : MonoBehaviour
 {
@@ -33,9 +33,9 @@ public class GameplayController : MonoBehaviour
 
     private int currentScore, coinScoreGame;
 
-    private RewardBasedVideoAd adRewardedEarnLives;
+ //   private RewardBasedVideoAd adRewardedEarnLives;
     private string idRewardedAd, idInterstitialAd;
-    private InterstitialAd adInterstitialGoToMenu;
+ //   private InterstitialAd adInterstitialGoToMenu;
 
     public static int adLifeChancesBird =0;
 
@@ -47,8 +47,8 @@ public class GameplayController : MonoBehaviour
     }
 
     void Start(){
-        adRewardedEarnLives = RewardBasedVideoAd.Instance;
-        MobileAds.Initialize(initStatus => { });
+  //      adRewardedEarnLives = RewardBasedVideoAd.Instance;
+   //     MobileAds.Initialize(initStatus => { });
         idRewardedAd = "ca-app-pub-3092873485358336/8888338330";
         idInterstitialAd = "ca-app-pub-3092873485358336/8851721450";
     }
@@ -76,9 +76,11 @@ public class GameplayController : MonoBehaviour
     }
 
     public void GoToMenuButton() {
-        if (Application.platform == RuntimePlatform.Android)
-        { RequestInterstitialAd(); }
-        else { SceneFader.instance.FadeIn("CustomMenu"); }
+        // if (Application.platform == RuntimePlatform.Android)
+        // { RequestInterstitialAd(); }
+        // else { SceneFader.instance.FadeIn("CustomMenu"); }
+
+        SceneFader.instance.FadeIn("CustomMenu");
       
     }
     public void ResumeGame() {
@@ -129,7 +131,7 @@ public class GameplayController : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android){
             noThanksAdsText.text = "Loading Ad....";
             noThanksAdsButton.interactable = false;
-            RequestRewardAd();
+           // RequestRewardAd();
         }
         else { IfEditorIsUnityAdmobSkip(); }
         
@@ -184,25 +186,25 @@ public class GameplayController : MonoBehaviour
 
     #region Reward video methods ---------------------------------------------
 
-    public void RequestRewardAd(){
+    // public void RequestRewardAd(){
 
-        AdRequest request = AdRequestBuild();
-        adRewardedEarnLives.LoadAd(request, idRewardedAd);
+    //     AdRequest request = AdRequestBuild();
+    //     adRewardedEarnLives.LoadAd(request, idRewardedAd);
 
-        adRewardedEarnLives.OnAdLoaded += this.HandleOnRewardedAdLoaded;
-        adRewardedEarnLives.OnAdRewarded += this.HandleOnAdRewarded;
-        adRewardedEarnLives.OnAdClosed += this.HandleOnRewardedAdClosed;
-    }
+    //     adRewardedEarnLives.OnAdLoaded += this.HandleOnRewardedAdLoaded;
+    //     adRewardedEarnLives.OnAdRewarded += this.HandleOnAdRewarded;
+    //     adRewardedEarnLives.OnAdClosed += this.HandleOnRewardedAdClosed;
+    // }
 
-    public void ShowRewardAd(){
-        if (adRewardedEarnLives.IsLoaded()) { adRewardedEarnLives.Show(); }
-        else { SceneFader.instance.FadeIn("CustomMenu"); }
-    }
+    // public void ShowRewardAd(){
+    //     if (adRewardedEarnLives.IsLoaded()) { adRewardedEarnLives.Show(); }
+    //     else { SceneFader.instance.FadeIn("CustomMenu"); }
+    // }
 
     //events
     public void HandleOnRewardedAdLoaded(object sender, EventArgs args) {
         //ad loaded
-        ShowRewardAd();
+//       ShowRewardAd();
     }
 
     public void HandleOnAdRewarded(object sender, EventArgs args){
@@ -214,35 +216,35 @@ public class GameplayController : MonoBehaviour
         RestartGame(currentScore, coinScoreGame);
     }
 
-    public void HandleOnRewardedAdClosed(object sender, EventArgs args){
-        //ad closed (even if not finished watching)
-        PlayerDiedShowScore(currentScore, coinScoreGame);
-        adRewardedEarnLives.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
-        adRewardedEarnLives.OnAdRewarded -= this.HandleOnAdRewarded;
-        adRewardedEarnLives.OnAdClosed -= this.HandleOnRewardedAdClosed;
-    }
+    // public void HandleOnRewardedAdClosed(object sender, EventArgs args){
+    //     //ad closed (even if not finished watching)
+    //     PlayerDiedShowScore(currentScore, coinScoreGame);
+    //     adRewardedEarnLives.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
+    //     adRewardedEarnLives.OnAdRewarded -= this.HandleOnAdRewarded;
+    //     adRewardedEarnLives.OnAdClosed -= this.HandleOnRewardedAdClosed;
+    // }
 
     #endregion
 
 
-    AdRequest AdRequestBuild(){
-        return new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator)
-            .AddTestDevice("CC9DF9C9E1DABC49E2EDEF7455F8800D")
-            .TagForChildDirectedTreatment(false)
-            .Build();
-    }
-    void OnDestroy() {
-        adRewardedEarnLives.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
-        adRewardedEarnLives.OnAdRewarded -= this.HandleOnAdRewarded;
-        adRewardedEarnLives.OnAdClosed -= this.HandleOnRewardedAdClosed;
+    // AdRequest AdRequestBuild(){
+    //     return new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator)
+    //         .AddTestDevice("CC9DF9C9E1DABC49E2EDEF7455F8800D")
+    //         .TagForChildDirectedTreatment(false)
+    //         .Build();
+    // }
+    // void OnDestroy() {
+    //     adRewardedEarnLives.OnAdLoaded -= this.HandleOnRewardedAdLoaded;
+    //     adRewardedEarnLives.OnAdRewarded -= this.HandleOnAdRewarded;
+    //     adRewardedEarnLives.OnAdClosed -= this.HandleOnRewardedAdClosed;
 
-        DestroyInterstitialAd();
-        //dettach events
-        adInterstitialGoToMenu.OnAdLoaded -= this.HandleOnAdLoaded;
-        adInterstitialGoToMenu.OnAdOpening -= this.HandleOnAdOpening;
-        adInterstitialGoToMenu.OnAdClosed -= this.HandleOnAdClosed;
+    //     DestroyInterstitialAd();
+    //     //dettach events
+    //     adInterstitialGoToMenu.OnAdLoaded -= this.HandleOnAdLoaded;
+    //     adInterstitialGoToMenu.OnAdOpening -= this.HandleOnAdOpening;
+    //     adInterstitialGoToMenu.OnAdClosed -= this.HandleOnAdClosed;
 
-    }
+    // }
 
     private void IfEditorIsUnityAdmobSkip() {
         adLifeChancesBird++;
@@ -253,41 +255,41 @@ public class GameplayController : MonoBehaviour
 
     #region Interstitial methods ---------------------------------------------
 
-    public void RequestInterstitialAd()
-    {
-        adInterstitialGoToMenu = new InterstitialAd(idInterstitialAd);
-        AdRequest request = AdRequestBuild();
-        adInterstitialGoToMenu.LoadAd(request);
+    // public void RequestInterstitialAd()
+    // {
+    //     adInterstitialGoToMenu = new InterstitialAd(idInterstitialAd);
+    //     AdRequest request = AdRequestBuild();
+    //     adInterstitialGoToMenu.LoadAd(request);
 
-        //attach events
-        adInterstitialGoToMenu.OnAdLoaded += this.HandleOnAdLoaded;
-        adInterstitialGoToMenu.OnAdOpening += this.HandleOnAdOpening;
-        adInterstitialGoToMenu.OnAdClosed += this.HandleOnAdClosed;
-        adInterstitialGoToMenu.OnAdFailedToLoad += this.HandleFailedToLoad;
-        adInterstitialGoToMenu.OnAdLeavingApplication += this.HandleAdleavingApplication;
-    }
+    //     //attach events
+    //     adInterstitialGoToMenu.OnAdLoaded += this.HandleOnAdLoaded;
+    //     adInterstitialGoToMenu.OnAdOpening += this.HandleOnAdOpening;
+    //     adInterstitialGoToMenu.OnAdClosed += this.HandleOnAdClosed;
+    //     adInterstitialGoToMenu.OnAdFailedToLoad += this.HandleFailedToLoad;
+    //     adInterstitialGoToMenu.OnAdLeavingApplication += this.HandleAdleavingApplication;
+    // }
 
-    public void ShowInterstitialAd()
-    {
-        if (adInterstitialGoToMenu.IsLoaded())
-        {
-            adInterstitialGoToMenu.Show();
-        }
+    // public void ShowInterstitialAd()
+    // {
+    //     if (adInterstitialGoToMenu.IsLoaded())
+    //     {
+    //         adInterstitialGoToMenu.Show();
+    //     }
         
            
-    }
+    // }
 
-    public void DestroyInterstitialAd() {
-        if (Application.platform == RuntimePlatform.Android){
-            adInterstitialGoToMenu.Destroy();
-        }
-    }
+    // public void DestroyInterstitialAd() {
+    //     if (Application.platform == RuntimePlatform.Android){
+    //         adInterstitialGoToMenu.Destroy();
+    //     }
+    // }
 
     //interstitial ad events
     public void HandleOnAdLoaded(object sender, EventArgs args){
         //this method executes when interstitial ad is Loaded and ready to show
         //BtnInterstitial.interactable = true; //button is ready to click (enabled)
-        ShowInterstitialAd();
+     //   ShowInterstitialAd();
     }
 
     public void HandleOnAdOpening(object sender, EventArgs args)
@@ -307,16 +309,16 @@ public class GameplayController : MonoBehaviour
 
     
 
-    public void HandleOnAdClosed(object sender, EventArgs args)
-    {
-        //this method executes when interstitial ad is closed
-        adInterstitialGoToMenu.OnAdLoaded -= this.HandleOnAdLoaded;
-        adInterstitialGoToMenu.OnAdOpening -= this.HandleOnAdOpening;
-        adInterstitialGoToMenu.OnAdClosed -= this.HandleOnAdClosed;
+    // public void HandleOnAdClosed(object sender, EventArgs args)
+    // {
+    //     //this method executes when interstitial ad is closed
+    //     adInterstitialGoToMenu.OnAdLoaded -= this.HandleOnAdLoaded;
+    //     adInterstitialGoToMenu.OnAdOpening -= this.HandleOnAdOpening;
+    //     adInterstitialGoToMenu.OnAdClosed -= this.HandleOnAdClosed;
 
-       SceneFader.instance.FadeIn("CustomMenu");
+    //    SceneFader.instance.FadeIn("CustomMenu");
        
-    }
+    // }
 
     #endregion
 
