@@ -8,14 +8,8 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId;
-
-    // Get the Ad Unit ID for the current platform:
-    //     _adUnitId = null; // This will remain null for unsupported platforms
-    // #if UNITY_IOS
-    // 		_adUnitId = _iOsAdUnitId;
-    // #elif UNITY_ANDROID
-    // 		_adUnitId = _androidAdUnitId;
-    // #endif
+    private bool isAdAllow;
+    public static bool isRewardCoinInGame = false;
 
     void Awake()
     {
@@ -65,6 +59,7 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
         _showAdButton.interactable = false;
         // Then show the ad:
         Advertisement.Show(_adUnitId, this);
+        isAdAllow = true;
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
@@ -72,13 +67,27 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-            Debug.Log("Unity Ads Rewarded Ad Completed");
+            if (isAdAllow)
+            {
+                Debug.Log("Unity Ads Rewarded Ad Completed");
 
-            // Grant a reward.
-            CoinPrefManager.instance.UpdateCoins(transform.position,100);
+                // Grant a reward.
 
-            // Load another ad:
-            Advertisement.Load(_adUnitId, this);
+                // Vector3 pos = _showAdButton.transform.position;
+                if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 1)
+                {
+                    // pos = new Vector3(-18.22f, 4.2f, 50);
+                    isRewardCoinInGame = true;
+                }
+                CoinPrefManager.instance.UpdateCoins(_showAdButton.transform.position, 100, false);
+                // Advertisement.RemoveListener(this);
+
+                // Load another ad:
+                Advertisement.Load(_adUnitId, this);
+                isRewardCoinInGame=false;
+                isAdAllow = false;
+            }
+            return;
         }
     }
 

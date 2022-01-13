@@ -37,6 +37,11 @@ public class CoinPrefManager : MonoBehaviour{
 
     }
 
+    private void Update()
+    {
+        coins = Mathf.Clamp(coins,0,int.MaxValue);
+    }
+
     void Awake(){
         MakeSingleton();
         targetPosition = target.position;
@@ -64,7 +69,7 @@ public class CoinPrefManager : MonoBehaviour{
         }        
     }
 
-    void AnimateCoin(Vector3 collectedCoinPosition, int amount){
+    void AnimateCoin(Vector3 collectedCoinPosition, int amount , bool changePos){
         for(int i =0; i<amount; i++) {
             if (coinsQueue.Count > 0) {
                 GameObject coinl = coinsQueue.Dequeue();
@@ -74,13 +79,19 @@ public class CoinPrefManager : MonoBehaviour{
                 coinl.transform.position = collectedCoinPosition;
                
                 Vector3 pos = Vector3.zero;
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 1)
+                if(changePos)
                 {
                     pos = collectedCoinPosition;
                 }
+
+                Vector3 goPos = targetPosition + pos;
+                if(RewardAd.isRewardCoinInGame)
+                {
+                    goPos = new Vector3(-18.22f, 4.2f, 10) + collectedCoinPosition + targetPosition;
+                }
                 //animate coin to target position
                 float duration = Random.Range (minAnimDuration, maxAnimDuration);
-                coinl.transform.DOMove(targetPosition + pos,duration)
+                coinl.transform.DOMove(goPos,duration)
                     .SetEase(easeType)
                     .OnComplete(() =>
                     {
@@ -94,9 +105,9 @@ public class CoinPrefManager : MonoBehaviour{
 
     }
 
-    public void UpdateCoins(Vector3 collectedCoinPosition, int amount){
+    public void UpdateCoins(Vector3 collectedCoinPosition, int amount, bool changePos){
        
-        AnimateCoin(collectedCoinPosition, amount);
+        AnimateCoin(collectedCoinPosition, amount , changePos);
          coins += amount;
         PlayerPrefs.SetInt("Coins", coins);
         coins = PlayerPrefs.GetInt("Coins", 0);

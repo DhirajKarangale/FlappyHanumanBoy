@@ -31,8 +31,8 @@ public class Game : MonoBehaviour
 
     void Start() 
     {
-        PlayerPrefs.SetInt("Coins", 25000);
-        PlayerPrefs.Save();
+        // PlayerPrefs.SetInt("Coins", 2500000);
+        // PlayerPrefs.Save();
         UpdateAllCoinsUiText();
     }
 

@@ -156,7 +156,7 @@ public class DailySpinManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
         watchAdButtonHolder.SetActive(true);
         textRewardedAdStatus.text = "Spin Again! Click Now";
         // CoinPrefManager.coins += scoreValueOfSpin;
-        CoinPrefManager.instance.UpdateCoins(collectCoinHolder.transform.position, scoreValueOfSpin);
+        CoinPrefManager.instance.UpdateCoins(collectCoinHolder.transform.position, scoreValueOfSpin,false);
         Debug.Log(scoreValueOfSpin);
         audioSource.PlayOneShot(coinClip);
     }
@@ -347,6 +347,7 @@ public class DailySpinManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
     {
         // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
         Debug.Log("Loading Ad: " + _adUnitId);
+        textRewardedAdStatus.text = "Loading Ad: ";
         Advertisement.Load(_adUnitId, this);
     }
 
@@ -385,6 +386,7 @@ public class DailySpinManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
             watchAdButtonHolder.SetActive(false);
             spinWheelTimerText.text = "Ready!";
 
+            textRewardedAdStatus.text = "Reward Get, More Spin";
 
 
             // Load another ad:
@@ -410,8 +412,8 @@ public class DailySpinManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsS
 
     void OnDestroy()
     {
-        // Clean up the button listeners:
-       // _showAdButton.onClick.RemoveAllListeners();
+        // Clean up the button listeners:
+        // _showAdButton.onClick.RemoveAllListeners();
     }
 
 }

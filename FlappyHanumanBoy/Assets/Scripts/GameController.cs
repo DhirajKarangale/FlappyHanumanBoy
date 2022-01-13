@@ -14,25 +14,33 @@ public class GameController : MonoBehaviour
     private const string SELECTED_WORLD = "Selected World";
 
 
-    void Awake(){
+    void Awake()
+    {
         MakeSingleton();
         IsTheGameStartedForFirstTime();
         //   PlayerPrefs.DeleteAll();
+        //  CoinPrefManager.coins = 25000;
+        //  PlayerPrefs.Save();
     }
 
-    void MakeSingleton(){
-        if (instance != null){
+    void MakeSingleton()
+    {
+        if (instance != null)
+        {
             Destroy(gameObject);
         }
-        else{
+        else
+        {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
     }
 
 
-    void IsTheGameStartedForFirstTime(){
-        if (!PlayerPrefs.HasKey("IsTheGameStartedForFirstTime")){
+    void IsTheGameStartedForFirstTime()
+    {
+        if (!PlayerPrefs.HasKey("IsTheGameStartedForFirstTime"))
+        {
             Debug.Log("Not First Time ");
             PlayerPrefs.SetInt(HIGH_SCORE, 0);
             PlayerPrefs.SetInt(SELECTED_BIRD, 0);
@@ -41,24 +49,31 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void SetSelectedBird(int selectedBird){
+    public void SetSelectedBird(int selectedBird)
+    {
         PlayerPrefs.SetInt(SELECTED_BIRD, selectedBird);
     }
-    public int GetSelectedBird(){
+    public int GetSelectedBird()
+    {
         return PlayerPrefs.GetInt(SELECTED_BIRD);
     }
 
-    public void SetSelectedWorld(int selectedWorld) {
+    public void SetSelectedWorld(int selectedWorld)
+    {
         PlayerPrefs.SetInt(SELECTED_WORLD, selectedWorld);
     }
-    public int GetSelectedWorld(){
+
+    public int GetSelectedWorld()
+    {
         return PlayerPrefs.GetInt(SELECTED_WORLD);
     }
 
-    public void SetHighScore(int score){
+    public void SetHighScore(int score)
+    {
         PlayerPrefs.SetInt(HIGH_SCORE, score);
     }
-    public int GetHighScore(){
+    public int GetHighScore()
+    {
         return PlayerPrefs.GetInt(HIGH_SCORE);
     }
 

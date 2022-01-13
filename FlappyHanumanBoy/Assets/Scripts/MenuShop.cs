@@ -50,10 +50,10 @@ public class MenuShop : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+        CheckPrefPlayerSelection();
         exitPanel.SetActive(false);
         // Add All Avatars and Environment To Menu
         lastTimerSpunTime = ulong.Parse(PlayerPrefs.GetString("LastTimerSpunTime", "0"));
-        CheckPrefPlayerSelection();
         ReloadAvatarMenu();
         ReloadEnvironmentMenu();
         // if (Application.platform == RuntimePlatform.Android) {  ConnectOnGooglePlayGames(); }
@@ -85,6 +85,39 @@ public class MenuShop : MonoBehaviour
     }
 
     void CheckPrefPlayerSelection() { 
+       
+        for(int i = 0; i< avatarItemLists.Capacity;i++)
+        {
+            if(PlayerPrefs.GetInt(avatarItemLists[i].CoinPrice + "AVT",0) == 1)
+            {
+                avatarItemLists[i].IsPurchased = true;
+                Debug.Log(avatarItemLists[i] + " is Purchased unlock ");
+            }
+            else
+            {
+                avatarItemLists[i].IsPurchased = false;
+            }
+        }
+
+
+        for(int i = 0; i< envItemLists.Capacity; i++)
+        {
+            if(PlayerPrefs.GetInt(envItemLists[i].CoinPrice + "ENV",0) == 1)
+            {
+                envItemLists[i].IsPurchased = true;
+            }
+            else
+            {
+                envItemLists[i].IsPurchased = false;
+            }
+        }
+
+        avatarItemLists[0].IsPurchased = true;
+        avatarItemLists[1].IsPurchased = true;
+
+        envItemLists[0].IsPurchased = true;
+        envItemLists[1].IsPurchased = true;
+        
         avatarItemLists[GameController.instance.GetSelectedBird()].IsSelected = true;
         envItemLists[GameController.instance.GetSelectedWorld()].IsSelected = true;
     }
@@ -272,8 +305,12 @@ public class MenuShop : MonoBehaviour
         //purchase Avatar
         Game.Instance.UseCoins(avatarItemLists[index].CoinPrice);
         avatarItemLists[index].IsPurchased = true;
+
+        PlayerPrefs.SetInt(avatarItemLists[index].CoinPrice + "AVT",1);
+        Debug.Log(avatarItemLists[index].ToString() + " Purchase");
+        
         Game.Instance.UpdateAllCoinsUiText();
-        CoinPrefManager.instance.UpdateCoins(BuyNowModal.transform.position, -avatarItemLists[index].CoinPrice);
+        CoinPrefManager.instance.UpdateCoins(BuyNowModal.transform.position, -avatarItemLists[index].CoinPrice,false);
         CloseShop();
     }
 
@@ -281,8 +318,12 @@ public class MenuShop : MonoBehaviour
         //purchase Environment
         Game.Instance.UseCoins(envItemLists[index].CoinPrice);
         envItemLists[index].IsPurchased = true;
+
+        PlayerPrefs.SetInt(envItemLists[index].CoinPrice + "ENV",1);
+        Debug.Log(envItemLists[index].ToString() + " Purchase");
+
         Game.Instance.UpdateAllCoinsUiText();
-        CoinPrefManager.instance.UpdateCoins(BuyNowModal.transform.position, -envItemLists[index].CoinPrice);
+        CoinPrefManager.instance.UpdateCoins(BuyNowModal.transform.position, -envItemLists[index].CoinPrice,false);
         CloseShop();
     }
 

@@ -397,7 +397,7 @@ public class GameplayController : MonoBehaviour, IUnityAdsLoadListener, IUnityAd
             Debug.Log("adLifeChancesBird++ After HandleRewarded Gameplaycontroller #198: " + adLifeChancesBird);
             hitWatchAdPanel.SetActive(false);
             RestartGame(currentScore, coinScoreGame);
-
+                noThanksAdsText.text = "Get Life ";
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);
@@ -408,11 +408,13 @@ public class GameplayController : MonoBehaviour, IUnityAdsLoadListener, IUnityAd
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
         Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
+        noThanksAdsText.text = "Ad fail to Load ";
         // Use the error details to determine whether to try to load another ad.
     }
 
     public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
     {
+        noThanksAdsText.text = "Ad fail to Show ";
         Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
         // Use the error details to determine whether to try to load another ad.
     }

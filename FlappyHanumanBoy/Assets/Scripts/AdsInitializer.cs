@@ -5,12 +5,13 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
 {
     [SerializeField] string _androidGameId;
     [SerializeField] string _iOSGameId;
-    [SerializeField] bool _testMode = true;
+    [SerializeField] bool _testMode = false;
     private string _gameId;
 
     void Awake()
     {
         InitializeAds();
+        _testMode = false;
     }
 
     public void InitializeAds()

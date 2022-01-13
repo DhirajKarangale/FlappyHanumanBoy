@@ -133,7 +133,7 @@ public class BirdScript : MonoBehaviour
 
             //CoinPrefManager.coins += 10;
             coinScore += 10;
-            CoinPrefManager.instance.UpdateCoins(target.transform.position, 10);
+            CoinPrefManager.instance.UpdateCoins(target.transform.position, 10,true);
             audioSource.PlayOneShot(coinClip);
 
         }
