@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     void Awake(){
         MakeSingleton();
         IsTheGameStartedForFirstTime();
-        //  PlayerPrefs.DeleteAll();
+        //   PlayerPrefs.DeleteAll();
     }
 
     void MakeSingleton(){
@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour
 
     void IsTheGameStartedForFirstTime(){
         if (!PlayerPrefs.HasKey("IsTheGameStartedForFirstTime")){
+            Debug.Log("Not First Time ");
             PlayerPrefs.SetInt(HIGH_SCORE, 0);
             PlayerPrefs.SetInt(SELECTED_BIRD, 0);
             PlayerPrefs.SetInt("IsTheGameStartedForFirstTime", 0);

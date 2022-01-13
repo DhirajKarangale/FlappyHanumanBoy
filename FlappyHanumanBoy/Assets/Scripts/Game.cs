@@ -31,7 +31,14 @@ public class Game : MonoBehaviour
 
     void Start() 
     {
+        PlayerPrefs.SetInt("Coins", 25000);
+        PlayerPrefs.Save();
         UpdateAllCoinsUiText();
+    }
+
+    private void Update()
+    {
+        Shopcoins = CoinPrefManager.coins;
     }
 
     public void UseCoins (int amount)

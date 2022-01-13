@@ -299,7 +299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.95816, y: -55.97}
+  m_AnchoredPosition: {x: 210.18005, y: -55.97}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &428630461
@@ -560,6 +560,8 @@ MonoBehaviour:
   audioSource: {fileID: 487737815}
   coinClip: {fileID: 8300000, guid: 1fd466f88b1e143f49fcb412aa1ce74e, type: 3}
   textRewardedAdStatus: {fileID: 1333073911}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!82 &487737815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1048,7 +1050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8151276639944682033, guid: a1b6d66afcfdc429cac2e2b289a1f71a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8151276639978615784, guid: a1b6d66afcfdc429cac2e2b289a1f71a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1100,7 +1102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8151276640049526801, guid: a1b6d66afcfdc429cac2e2b289a1f71a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -342.1434
+      value: -342.14343
       objectReference: {fileID: 0}
     - target: {fileID: 8151276640049526802, guid: a1b6d66afcfdc429cac2e2b289a1f71a, type: 3}
       propertyPath: m_Layer
@@ -1906,7 +1908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.95816, y: -180.91003}
+  m_AnchoredPosition: {x: 210.18005, y: -180.91003}
   m_SizeDelta: {x: 400, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037009031

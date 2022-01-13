@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Advertisements;
 // using GoogleMobileAds.Api;
 
-public class GameplayController : MonoBehaviour
+public class GameplayController : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     public static GameplayController instance;
 
@@ -33,35 +34,48 @@ public class GameplayController : MonoBehaviour
 
     private int currentScore, coinScoreGame;
 
- //   private RewardBasedVideoAd adRewardedEarnLives;
+    //   private RewardBasedVideoAd adRewardedEarnLives;
     private string idRewardedAd, idInterstitialAd;
- //   private InterstitialAd adInterstitialGoToMenu;
+    //   private InterstitialAd adInterstitialGoToMenu;
 
-    public static int adLifeChancesBird =0;
+    public static int adLifeChancesBird = 0;
 
     public static int currentScoreSt, coinScoreGameSt;
+    [SerializeField] string _androidAdUnitId = "Rewarded_Android";
+    [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
+    string _adUnitId;
 
-    void Awake(){
+    void Awake()
+    {
+        _adUnitId = _androidAdUnitId;
         MakeInstance();
         Time.timeScale = 0f;
     }
 
-    void Start(){
-  //      adRewardedEarnLives = RewardBasedVideoAd.Instance;
-   //     MobileAds.Initialize(initStatus => { });
+    void Start()
+    {
+
+        LoadAd();
+        //      adRewardedEarnLives = RewardBasedVideoAd.Instance;
+        //     MobileAds.Initialize(initStatus => { });
         idRewardedAd = "ca-app-pub-3092873485358336/8888338330";
         idInterstitialAd = "ca-app-pub-3092873485358336/8851721450";
     }
 
-    void MakeInstance() {
-        if(instance == null) {
+    void MakeInstance()
+    {
+        if (instance == null)
+        {
             instance = this;
         }
     }
 
-    public void PauseGame(){
-        if(BirdScript.instance != null) {
-            if (BirdScript.instance.isAlive) {
+    public void PauseGame()
+    {
+        if (BirdScript.instance != null)
+        {
+            if (BirdScript.instance.isAlive)
+            {
                 pausePanel.SetActive(true);
                 gameOvertext.gameObject.SetActive(false);
                 endScore.text = BirdScript.instance.score.ToString();
@@ -75,83 +89,95 @@ public class GameplayController : MonoBehaviour
 
     }
 
-    public void GoToMenuButton() {
+    public void GoToMenuButton()
+    {
         // if (Application.platform == RuntimePlatform.Android)
         // { RequestInterstitialAd(); }
         // else { SceneFader.instance.FadeIn("CustomMenu"); }
 
         SceneFader.instance.FadeIn("CustomMenu");
-      
+
     }
-    public void ResumeGame() {
+    public void ResumeGame()
+    {
         pausePanel.SetActive(false);
         Time.timeScale = 1f;
 
     }
 
-    public void RestartGame(int score, int coinScore) {
+    public void RestartGame(int score, int coinScore)
+    {
         currentScoreSt = score;
         coinScoreGameSt = coinScore;
         SceneFader.instance.FadeIn(SceneManager.GetActiveScene().name);
-  
+
     }
 
-    public void ShowCoinAddPanel(){
+    public void ShowCoinAddPanel()
+    {
         addCoinPanel.SetActive(true);
         Time.timeScale = 1f;
     }
 
-    public void HideCoinAddPanel(){
+    public void HideCoinAddPanel()
+    {
         addCoinPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
-    public void PlayGame(){   
-            scoreText.gameObject.SetActive(true);
-            flyingHanuman.SetActive(true);
-            //remove the line immediately below
-            // birds[1].SetActive(true);
-            // Comment the line below and uncomment the one above to play directly from Game Scene
-            birds[GameController.instance.GetSelectedBird()].SetActive(true);
-            instructionsButton.gameObject.SetActive(false);
-            Time.timeScale = 1f;
-            SetScore(currentScoreSt);
-            currentScoreSt = 0;
-            coinScoreGameSt = 0;
-       
+    public void PlayGame()
+    {
+        scoreText.gameObject.SetActive(true);
+        flyingHanuman.SetActive(true);
+        //remove the line immediately below
+        // birds[1].SetActive(true);
+        // Comment the line below and uncomment the one above to play directly from Game Scene
+        birds[GameController.instance.GetSelectedBird()].SetActive(true);
+        instructionsButton.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        SetScore(currentScoreSt);
+        currentScoreSt = 0;
+        coinScoreGameSt = 0;
+
     }
 
-    public void SetScore(int score) {
+    public void SetScore(int score)
+    {
         scoreText.text = score.ToString();
     }
 
-    public void WatchAd() {
+    public void WatchAd()
+    {
         Debug.Log("Watching Ad");
-        //hitWatchAdPanel.SetActive(false);
-        if (Application.platform == RuntimePlatform.Android){
-            noThanksAdsText.text = "Loading Ad....";
-            noThanksAdsButton.interactable = false;
-           // RequestRewardAd();
-        }
-        else { IfEditorIsUnityAdmobSkip(); }
-        
+        // //hitWatchAdPanel.SetActive(false);
+        // if (Application.platform == RuntimePlatform.Android)
+        // {
+        //     noThanksAdsText.text = "Loading Ad....";
+        //     noThanksAdsButton.interactable = false;
+        //     // RequestRewardAd();
+        // }
+        // else { IfEditorIsUnityAdmobSkip(); }
+        ShowAd();
+
     }
 
-    public void ShowHitWatchAdPanel(int score, int coinScore) {
+    public void ShowHitWatchAdPanel(int score, int coinScore)
+    {
         hitWatchAdPanel.SetActive(true);
         currentScore = score;
         coinScoreGame = coinScore;
-        chancesLeftText.text = (3-adLifeChancesBird).ToString();
+        chancesLeftText.text = (3 - adLifeChancesBird).ToString();
 
         noThanksAdsText.text = "No Thanks";
         noThanksAdsButton.interactable = true;
         noThanksAdsButton.onClick.RemoveAllListeners();
         noThanksAdsButton.onClick.AddListener(() => PlayerDiedShowScore(currentScore, coinScoreGame));
-       
+
     }
 
-    public void PlayerDiedShowScore(int score, int coinScore) {
-        
+    public void PlayerDiedShowScore(int score, int coinScore)
+    {
+
         pausePanel.SetActive(true);
         hitWatchAdPanel.SetActive(false);
         gameOvertext.gameObject.SetActive(true);
@@ -163,21 +189,22 @@ public class GameplayController : MonoBehaviour
         coinCollectedScore.text = coinScoreGame.ToString();
 
 
-        if (currentScore > GameController.instance.GetHighScore()) {
+        if (currentScore > GameController.instance.GetHighScore())
+        {
             GameController.instance.SetHighScore(currentScore);
         }
 
         bestScore.text = GameController.instance.GetHighScore().ToString();
 
         if (currentScore <= 20) { medalImage.sprite = medals[0]; }
-        else if (currentScore > 20 && currentScore < 40 ) { medalImage.sprite = medals[1]; }
+        else if (currentScore > 20 && currentScore < 40) { medalImage.sprite = medals[1]; }
         else if (currentScore > 40 && currentScore < 60) { medalImage.sprite = medals[2]; }
         else if (currentScore > 60 && currentScore < 100) { medalImage.sprite = medals[3]; }
-        else{ medalImage.sprite = medals[4]; }
+        else { medalImage.sprite = medals[4]; }
 
 
         restartGameButton.onClick.RemoveAllListeners();
-        restartGameButton.onClick.AddListener(() => RestartGame(0,0));
+        restartGameButton.onClick.AddListener(() => RestartGame(0, 0));
 
         currentScoreSt = 0;
         coinScoreGameSt = 0;
@@ -202,12 +229,14 @@ public class GameplayController : MonoBehaviour
     // }
 
     //events
-    public void HandleOnRewardedAdLoaded(object sender, EventArgs args) {
+    public void HandleOnRewardedAdLoaded(object sender, EventArgs args)
+    {
         //ad loaded
-//       ShowRewardAd();
+        //       ShowRewardAd();
     }
 
-    public void HandleOnAdRewarded(object sender, EventArgs args){
+    public void HandleOnAdRewarded(object sender, EventArgs args)
+    {
         //user finished watching ad
 
         adLifeChancesBird++;
@@ -246,7 +275,8 @@ public class GameplayController : MonoBehaviour
 
     // }
 
-    private void IfEditorIsUnityAdmobSkip() {
+    private void IfEditorIsUnityAdmobSkip()
+    {
         adLifeChancesBird++;
         Debug.Log("adLifeChancesBird++ After IfEditorUnity Gameplaycontroller #227: " + adLifeChancesBird);
         hitWatchAdPanel.SetActive(false);
@@ -275,8 +305,8 @@ public class GameplayController : MonoBehaviour
     //     {
     //         adInterstitialGoToMenu.Show();
     //     }
-        
-           
+
+
     // }
 
     // public void DestroyInterstitialAd() {
@@ -286,10 +316,11 @@ public class GameplayController : MonoBehaviour
     // }
 
     //interstitial ad events
-    public void HandleOnAdLoaded(object sender, EventArgs args){
+    public void HandleOnAdLoaded(object sender, EventArgs args)
+    {
         //this method executes when interstitial ad is Loaded and ready to show
         //BtnInterstitial.interactable = true; //button is ready to click (enabled)
-     //   ShowInterstitialAd();
+        //   ShowInterstitialAd();
     }
 
     public void HandleOnAdOpening(object sender, EventArgs args)
@@ -299,15 +330,17 @@ public class GameplayController : MonoBehaviour
         SceneFader.instance.FadeIn("CustomMenu");
     }
 
-    public void HandleFailedToLoad(object sender, EventArgs args) {
+    public void HandleFailedToLoad(object sender, EventArgs args)
+    {
         SceneFader.instance.FadeIn("CustomMenu");
     }
 
-    public void HandleAdleavingApplication(object sender, EventArgs args){
+    public void HandleAdleavingApplication(object sender, EventArgs args)
+    {
         SceneFader.instance.FadeIn("CustomMenu");
     }
 
-    
+
 
     // public void HandleOnAdClosed(object sender, EventArgs args)
     // {
@@ -317,9 +350,80 @@ public class GameplayController : MonoBehaviour
     //     adInterstitialGoToMenu.OnAdClosed -= this.HandleOnAdClosed;
 
     //    SceneFader.instance.FadeIn("CustomMenu");
-       
+
     // }
 
     #endregion
+
+
+    // Load content to the Ad Unit:
+    public void LoadAd()
+    {
+        // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
+        Debug.Log("Loading Ad: " + _adUnitId);
+        Advertisement.Load(_adUnitId, this);
+    }
+
+    // If the ad successfully loads, add a listener to the button and enable it:
+    public void OnUnityAdsAdLoaded(string adUnitId)
+    {
+        Debug.Log("Ad Loaded: " + adUnitId);
+
+        if (adUnitId.Equals(_adUnitId))
+        {
+            // Configure the button to call the ShowAd() method when clicked:
+            // Enable the button for users to click:
+            //  _showAdButton.interactable = true;
+        }
+    }
+
+    // Implement a method to execute when the user clicks the button.
+    public void ShowAd()
+    {
+        // Disable the button: 
+        //  _showAdButton.interactable = false;
+        // Then show the ad:
+        Advertisement.Show(_adUnitId, this);
+    }
+
+    // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
+    public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
+    {
+        if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
+        {
+            Debug.Log("Unity Ads Rewarded Ad Completed");
+            // Grant a reward.
+            adLifeChancesBird++;
+            Debug.Log("adLifeChancesBird++ After HandleRewarded Gameplaycontroller #198: " + adLifeChancesBird);
+            hitWatchAdPanel.SetActive(false);
+            RestartGame(currentScore, coinScoreGame);
+
+
+            // Load another ad:
+            Advertisement.Load(_adUnitId, this);
+        }
+    }
+
+    // Implement Load and Show Listener error callbacks:
+    public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
+    {
+        Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
+        // Use the error details to determine whether to try to load another ad.
+    }
+
+    public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
+    {
+        Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
+        // Use the error details to determine whether to try to load another ad.
+    }
+
+    public void OnUnityAdsShowStart(string adUnitId) { }
+    public void OnUnityAdsShowClick(string adUnitId) { }
+
+    void OnDestroy()
+    {
+        // Clean up the button listeners:
+        // _showAdButton.onClick.RemoveAllListeners();
+    }
 
 }

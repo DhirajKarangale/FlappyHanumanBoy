@@ -56,7 +56,7 @@ public class MenuShop : MonoBehaviour
         CheckPrefPlayerSelection();
         ReloadAvatarMenu();
         ReloadEnvironmentMenu();
-        if (Application.platform == RuntimePlatform.Android) {  ConnectOnGooglePlayGames(); }
+        // if (Application.platform == RuntimePlatform.Android) {  ConnectOnGooglePlayGames(); }
     }
 
     void Update(){
@@ -314,7 +314,7 @@ public class MenuShop : MonoBehaviour
     }
 
 
-    void ConnectOnGooglePlayGames() { LeaderboardsController.instance.ConnectOrDisconnectOnGooglePlayames(); }
-    public void OpenLeaderboardScoreUI() { LeaderboardsController.instance.OpenLeaderboardScore(); }
+    // void ConnectOnGooglePlayGames() { LeaderboardsController.instance.ConnectOrDisconnectOnGooglePlayames(); }
+    // public void OpenLeaderboardScoreUI() { LeaderboardsController.instance.OpenLeaderboardScore(); }
 
 }
